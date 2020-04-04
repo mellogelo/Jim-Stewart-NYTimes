@@ -18,26 +18,48 @@
       </div>
 
     <!-- Form -->
-    <form>
-        <div class="form-group">
-          <label for="searchTerm">Search Term</label>
-          <input type="search" class="form-control" id="searchTerm" placeholder="Search Article">
+    <div id="searchPara">
+        <div>
+            <h5>Search Parameters</h5>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Example select</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>5</option>
-            <option>10</option>
-            <option>15</option>
-            <option>25</option>
-            <option>30</option>
-          </select>
+        <form>
+            <div class="form-group">
+              <label for="searchTerm">Search Term</label>
+              <input type="text" class="form-control" id="searchTerm" placeholder="Search Article">
+            </div>
+            <div class="form-group">
+              <label for="recordsRetrieve">Number of Records to Retrieve</label>
+              <select class="form-control" id="recordsRetrieve">
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>25</option>
+                <option>30</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="startYear">Start Year (Optional)</label>
+                <input type="text" class="form-control" id="startYear">
+              </div>
+              <div class="form-group">
+                <label for="endYear">End Year (Optional)</label>
+                <input type="text" class="form-control" id="endYear">
+              </div>
+              <button type="submit" class="btn btn-primary">Search</button>
+              <button type="submit" class="btn btn-primary clear">Clear Results</button>
+          </form>
+    </div>
+    <div id="Articles">
+        <div>
+            <h5>Top Articles</h5>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div id="topArticles">
+
         </div>
-      </form>
+    </div>
+    <footer>
+        <p>Made with lots and lots of ♥</p>
+    </footer>
       <!-- JS -->
       <script src="script.js"></script>
     <!-- Bootstrap JS -->
