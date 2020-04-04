@@ -1,0 +1,24 @@
+.jumbotron {
+    background-color: #223258;
+    font-family: Times;
+    font-weight: bolder;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+body {
+    padding: 10px;
+}
+
+#formTitle {
+    background-color: rgb(206, 206, 206);
+    padding: 10px;
+    color: black;
+}
+
+form {
+    padding: 15px;
+}
